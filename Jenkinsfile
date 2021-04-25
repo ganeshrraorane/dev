@@ -9,6 +9,7 @@ pipeline {
         stage('Example Test') {
             steps {
                 echo 'Hello, JDK'
+		sh "ansible-playbook site.yml"
             }
         }
     }
