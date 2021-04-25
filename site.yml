@@ -1,0 +1,14 @@
+---
+ - hosts: client
+   tasks:
+
+# - name: apply comman conf
+#   hosts: client
+#   user: ganesh
+#   become: yes
+#   become_method: sudo
+#   tasks:
+ 
+   roles: 
+     -  apache
+ 
