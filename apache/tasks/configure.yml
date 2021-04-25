@@ -1,0 +1,19 @@
+---
+#configuring httpd conf file
+ - name: httpd conf file
+   copy:
+     src: vhost.conf 
+     dest: /etc/httpd/conf.d/vhost.comf
+     owner: root
+     group: root
+     mode: 0644
+   notify:
+     - restart httpd service
+
+ - name: index.html file
+   copy:
+     src: index.html 
+     dest: /var/www/html/index.html
+     owner: root
+     group: root
+     mode: 0644
