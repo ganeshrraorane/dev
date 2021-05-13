@@ -4,9 +4,9 @@
 
 # - name: apply comman conf
 #   hosts: client
-#   user: ganesh
-#   become: yes
-#   become_method: sudo
+   user: ganesh
+   become: yes
+   become_method: sudo
 #   tasks:
  
    roles: 
