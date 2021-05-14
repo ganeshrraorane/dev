@@ -1,5 +1,5 @@
 ---
- - hosts: client
+ - hosts: all
    tasks:
 
 # - name: apply comman conf
