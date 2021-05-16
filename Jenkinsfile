@@ -6,7 +6,7 @@ pipeline {
 			writeFile file: 'hosts.ini', text: """${INVENTORY}"""
 		}
 	}
-        stage('Example Build') {
+        stage('check hosts availability') {
             steps {
                 echo 'Hello, Maven'
             }
