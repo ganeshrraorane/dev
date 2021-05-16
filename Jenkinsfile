@@ -1,7 +1,4 @@
 pipeline {
-    environment {
-    MY_ENV_VAR='INVENTORY'
-    }
     agent any
     stages {
 	stage('Creating inventory') {
