@@ -8,7 +8,7 @@ pipeline {
 	}
         stage('check hosts availability') {
             steps {
-                echo 'Hello, Maven'
+                sh "ansible all -m ping"
             }
         }
         stage('Example Test') {
